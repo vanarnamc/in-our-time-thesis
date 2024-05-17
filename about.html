@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="media/favicon.png">
+
+    <style>
+        body{
+            background-color: white;
+        }
+    </style>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!-- Add any additional stylesheets or scripts here -->
+</head>
+<body>
+
+    <!-- Link to Home Page -->
+    <div>
+        <a href="index.html" id="home" style="mix-blend-mode: difference;">inourti.me</a>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <p>
+            
+            “We have now become aware of the possibility of arranging the entire human environment as a work of art, as a teaching machine designed to maximize perception and to make everyday learning a process of discovery. Application of this knowledge would be the equivalent of a thermostat controlling room temperature. It would seem only reasonable to extend such controls to all the sensory thresholds of our being.”
+           <br><div>—Marshall McLuhan, The Medium is the Massage (1967)</div> 
+        </p>
+        <p> In a time where optimization, efficiency, and headlines dominate the collective consciousness, questions quickly arise. Does hyper-optimization come with diminishing, if not decreasing returns? How should we deliver the news, and what are the ethical concerns with the 24-hour news cyle? What does  it mean to live in a society where each moment, a new headline arises, many times, outdoing the previous one? Are there alternatives to click-bait journalism? 
+            </p>
+            Inourti.me employs facial recognition technology to monitor the user's eye movements using their computer's camera. Each time the user blinks, the system not only generates a new headline from the New York Times in real time, but also initiates a timer to measure the duration the user spends reading this headline. The time taken to read the headline influences the next interaction: the longer the reading time, the more intense and noisy the sound generated upon the user's subsequent blink. The use of consumer-grade equipment to track involuntary body movements, raises questions about vulnerability, privacy, hyperstimulation, and surveillance in our heavily media-influenced world.
+            
+        
+    </div>
+    <!-- <section id="demos"> -->
+
+    <div id="liveView" class="videoView">
+        <div style="position: fixed;">
+          <video id="webcam" style="position: absolute; left: 0; top: 0; opacity: 0;" autoplay playsinline></video>
+          <canvas id="output_canvas" width="1920" height="1080"></canvas>
+          <div id="showHideText" style="position: fixed; bottom: 10px; right: 10px; z-index: 999999;">
+            <span>Hide Diagram</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="blend-shapes">
+        <ul class="blend-shapes-list" id="video-blend-shapes"></ul>
+      </div>
+    </section>
+  </div>
+  
+  <script type="module" src="script2.js">
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>inourti.me</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="media/favicon.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.36/Tone.min.js"></script>
+
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<body>
+
+    <!-- Welcome Screen with Clickable Text -->
+    <div id="welcomeScreen" class="welcome-screen">
+      <div id="welcomeText">
+        <p>inourti.me<br></p>
+      </div>
+    </div>
+
+ 
+
+  <!-- Main Content (initially hidden) -->
+  <div id="mainContent" class="hidden">
+    <!-- Section for Demos -->
+    <section id="demos">
+      <div id="headline">Blink.</div>
+
+      <div id="liveView" class="videoView">
+        <div style="position: relative;">
+          <video id="webcam" style="position: absolute; left: 0; top: 0; opacity: 0;" autoplay playsinline></video>
+          
+        <canvas id="output_canvas" width="1920" height="1080"></canvas>
+         <!-- Icon Link in the Top Right Corner -->
+  <a href="about.html" id="infoIconLink">
+    <img src="media/infoicon.svg" id="infoIconLink" alt="Info">
+  </a>
+        <div id="muteButton" style="position: fixed; top: 10px; left: 10px; z-index: 999999;">
+            <span>Mute</span>
+        </div>
+          <div id="showHideText" style="position: fixed; bottom: 10px; right: 10px; z-index: 999999;">
+            <span>Show Diagram</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="blend-shapes">
+        <ul class="blend-shapes-list" id="video-blend-shapes"></ul>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
